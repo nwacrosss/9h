@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import type { EnrollmentData, ChangeRecord } from '../types';
 import { toast } from 'sonner';
 
-const API_URL = '/api/service/vneduApi/getReportTHPT?nam_hoc=2026';
+const API_URL = import.meta.env.VITE_API_URL || '/api/service/vneduApi/getReportTHPT?nam_hoc=2026';
 const POLLING_INTERVAL = 5000;
 const LOGS_STORAGE_KEY = 'vnedu_tracker_logs';
 
