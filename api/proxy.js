@@ -1,5 +1,6 @@
 export const config = {
   runtime: 'edge',
+  regions: ['sin1'], // Force execution in Singapore (closest to VN)
 };
 
 export default async function handler(request) {
